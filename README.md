@@ -30,18 +30,29 @@ Just delete the code “encoding='UTF-8”, and you can run  the tool and output
 ## 常見Q&A
 1. Q：如果遇到`ValueError: dict contains fields not in fieldnames: 'something'`錯誤該怎麼辦？  
 A：此情況代表該筆紀錄中出現了程式碼中沒有的欄位，請將錯誤紀錄及該筆原始 log 貼至 [issues](https://github.com/hms5232/ufw-log-to-csv/issues) 上以利更新程式。
+Q1:If you face the problem that "ValueError: dict contains fields not on fieldnames:'something'," how can you do?
+A1:This situation means the code get the columns that doesn't exist originally. Plz paste the wrong record and the original log to [issues](https://github.com/hms5232/ufw-log-to-csv/issues), so that the code can be updated.
+
 2. Q：輸出的 csv 欄位順序我不喜歡，可以自己改嗎？  
 A：可以，請自行調整 `fieldnames` 此處的順序。但請注意，不要隨意更動欄位名稱以防程式出錯。
+Q2:I DON'T like the order of column in the csv file I output, may I take a change? 
+A2: Ya! please check the order in fieldnames and make sure that don't move the name of colmns. Or it may be wrong.
+
 3. Q：為什麼紀錄的最後方會有很多空的欄位？  
 A：因為不同等級設定甚至是封包協定都會有不同的內容，為了方便篩選、統計等故全部列出。有資料則填入；沒有則留空。
+Q3:WHY there will some bank colmns on the bottom of the record?
+A3:Cause there are different sets and content for the protocol. To be easier to calculate and filter , I design the code to list all data. 
+If there is data, fill it in  ;if not, leave it bank.  
+
 4. Q：「??」欄位是做什麼用的？如果有資料該怎麼辦？  
 A：這個欄位是用於中括號裡紀錄的例外處理，如果此欄位出現資料，請將該筆原始紀錄回報至 [issues](https://github.com/hms5232/ufw-log-to-csv/issues)。
+Q4: What does [??] coilmn here? what can you do if there is data?
+A4: This column is for the exception of  the record in brackets. If there is data, plz report that data to [issues](https://github.com/hms5232/ufw-log-to-csv/issues)。.
 
 ## 已知問題　Known issues
-1. 當協定為ICMP時有奇怪的紀錄會破壞整個邏輯，詳細見 [issue4](https://github.com/hms5232/ufw-log-to-csv/issues/4)
-
+1. 當協定為ICMP時有奇怪的紀錄會破壞整個邏輯，詳細見 [issue4](https://github.com/hms5232/ufw-log-to-csv/issues/4o
+When protocol is ICMP with strange recod, it will break whole logic. Read detail in [issue4](https://github.com/hms5232/ufw-log-to-csv/issues/4o
 
 ## 許可　License
 請見 [LICENSE](https://github.com/hms5232/ufw-log-to-csv/blob/master/LICENSE) 頁面。
-  
 See [LICENSE](https://github.com/hms5232/ufw-log-to-csv/blob/master/LICENSE).
