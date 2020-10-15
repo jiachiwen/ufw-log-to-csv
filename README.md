@@ -26,7 +26,12 @@ Just delete the code “encoding='UTF-8”, and you can run  the tool and output
     python3 ufw_log_to_csv.py  # Linux user
 
 之後程式會自己尋找`ufw.log`這個檔案並輸出成`[YYYYMMDD_HHMMSS].csv`（可自行替換程式碼中輸出和輸入的檔名以符合自己需求），如果有不正確的地方請調整設定：編碼為**UTF-8**、資料有標題、分隔符號為**逗號**。
-
+About the meanings in every item, check https://askubuntu.com/questions/1116145/understanding-ufw-log 
+plz put `ufw_log_to_csv.py`and `ufw.log`in the same catalog(copy log or put `ufw_log_to_csv.py`in, I RECOMMAND the former) to execute.
+    cd [檔案所在位置]
+    py ufw_log_to_csv.py  # Windows user
+    python3 ufw_log_to_csv.py  # Linux user
+and then the code will search `ufw.log` and export to `[YYYYMMDD_HHMMSS].csv`(you can change the name of the file )
 ## 常見Q&A
 1. Q：如果遇到`ValueError: dict contains fields not in fieldnames: 'something'`錯誤該怎麼辦？  
 A：此情況代表該筆紀錄中出現了程式碼中沒有的欄位，請將錯誤紀錄及該筆原始 log 貼至 [issues](https://github.com/hms5232/ufw-log-to-csv/issues) 上以利更新程式。
