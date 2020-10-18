@@ -34,6 +34,7 @@ About the meanings in every item, check https://askubuntu.com/questions/1116145/
     python3 ufw_log_to_csv.py  # Linux user
 
 and then the code will search `ufw.log` and export to `[YYYYMMDD_HHMMSS].csv`(you can change the name of the file to meet your need )
+if there is something unproper, plz debug in the following way： code is **UTF-8**、data with title and semicolon to **comma**.
 ## 常見Q&A
 1. Q：如果遇到`ValueError: dict contains fields not in fieldnames: 'something'`錯誤該怎麼辦？  
 A：此情況代表該筆紀錄中出現了程式碼中沒有的欄位，請將錯誤紀錄及該筆原始 log 貼至 [issues](https://github.com/hms5232/ufw-log-to-csv/issues) 上以利更新程式。
