@@ -3,8 +3,9 @@ Convert UFW log file to csv.
 
 ## 緣起　Introduction
 在啟用[UFW（Uncomplicated Firewall）](https://zh.wikipedia.org/wiki/Uncomplicated_Firewall)後有時候會打開防火牆產生的日誌看看，但看幾次總覺得原生出來的不太容易閱讀或統計之類的，因此動手寫了一個小程式來幫忙轉成csv。
+
 Why I create this little tool?
-Since using [UFW（Uncomplicated Firewall）](https://zh.wikipedia.org/wiki/Uncomplicated_Firewall , I often check the diary(record)generated from the firewall. 
+Since using [UFW（Uncomplicated Firewall）](https://zh.wikipedia.org/wiki/Uncomplicated_Firewall) , I often check the diary(record)generated from the firewall. 
 However I find that it’s hard to read or to calculate the original diary(record)
 Thus, I decide to make a tool to translate the record to csv file.
 
